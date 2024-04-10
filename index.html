@@ -32,10 +32,13 @@
     </style>
   </head>
   <body class="montserrat scroll-smooth">
-    <div
-      class="fixed w-full h-screen hidden  top-0 items-center justify-center z-50"
+    <div id="form-pop"
+      class="fixed w-full h-screen hidden top-0 items-center justify-center z-50"
     >
-      <div class="flex flex-col bg-[#222222] p-6 w-1/2 mt-8 md:mt-0 shadow-2xl">
+      <div class="flex flex-col bg-[#222222] p-6 md:w-1/2 mt-8 md:mt-0 shadow-2xl">
+        <span id='close' class="material-symbols-outlined text-white self-end bg-black rounded-full p-2">
+          close
+          </span>
         <h2 class="text-gray-300 text-lg mb-1 font-medium title-font">
           Get in Touch with Us
         </h2>
@@ -483,7 +486,7 @@
                   cornhole brunch, slow-carb neutra irony.
                 </p>
                 <button
-                  class="flex mx-auto mt-6 text-white bg-black border-0 py-2 px-5 focus:outline-none hover:bg-gray-600 rounded"
+                  class="openForm flex mx-auto mt-6 text-white bg-black border-0 py-2 px-5 focus:outline-none hover:bg-gray-600 rounded"
                 >
                   Request price
                 </button>
@@ -506,7 +509,7 @@
                   cornhole brunch, slow-carb neutra irony.
                 </p>
                 <button
-                  class="flex mx-auto mt-6 text-white bg-black border-0 py-2 px-5 focus:outline-none hover:bg-gray-600 rounded"
+                  class="openForm flex mx-auto mt-6 text-white bg-black border-0 py-2 px-5 focus:outline-none hover:bg-gray-600 rounded"
                 >
                   Request Price
                 </button>
@@ -685,6 +688,14 @@
             $("#nav").removeClass("bg-[#000]");
           }
         });
+        $('.openForm').click(()=>{
+          $('#form-pop').removeClass('hidden');
+          $('#form-pop').addClass('flex');
+        })
+        $('#close').click(()=>{
+          $('#form-pop').removeClass('flex');
+          $('#form-pop').addClass('hidden');
+        })
         $("#myForm").submit(function (event) {
           console.log("click");
           event.preventDefault();
