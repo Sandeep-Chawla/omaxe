@@ -102,7 +102,7 @@
               placeholder="Name"
               class="w-full bg-[#d4b159bf] rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out placeholder:text-black"
             />
-            <div id="name-error2" class="text-red-600 bounce"></div>
+            <div id="name-error2" class="text-red-600"></div>
           </div>
           <div class="relative mb-4">
             <input
@@ -112,7 +112,7 @@
               placeholder="Mobile"
               class="w-full bg-[#d4b159bf] rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out placeholder:text-black"
             />
-            <div id="mobile-error2" class="text-red-600 bounce"></div>
+            <div id="mobile-error2" class="text-red-600 "></div>
           </div>
 
           <div class="relative mb-4">
@@ -210,7 +210,7 @@
                   placeholder="Name"
                   class="w-full text-black bg-[#d4b159bf] rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out placeholder:text-black"
                 />
-                <div id="name-error" class="text-red-600 bounce"></div>
+                <div id="name-error" class="text-red-600"></div>
               </div>
               <div class="relative mb-4">
                 <input
@@ -220,7 +220,7 @@
                   placeholder="Mobile"
                   class="w-full text-black bg-[#d4b159bf] rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out placeholder:text-black"
                 />
-                <div id="mobile-error" class="text-red-600 bounce"></div>
+                <div id="mobile-error" class="text-red-600"></div>
               </div>
 
               <div class="relative mb-4">
@@ -1102,19 +1102,24 @@
           var isValid = true;
 
           if ($("#name").val().length < 3) {
-            // $("#username + .error").text("Username must be at least 4 characters long.");
-            console.log("Username must be at least 4 characters long.");
+            $("#name-error").text(
+              "Please Enter a Valid Name"
+            );
+            $("#name-error").addClass('bounce')
             isValid = false;
           }
           if ($("#mobile").val().length < 10) {
-            $("#mobile-number + .error").text(
+            $("#mobile-error").text(
               "Mobile number must be at least 10 characters long."
             );
+            $("#mobile-error").addClass('bounce')
             isValid = false;
           }
           if (isValid) {
             // form is valid, submit it via AJAX
             $("#submit").prop("disabled", true);
+            $("#mobile-error").text("");
+            $("#name-error").text("");
 
             // $.ajax({
             //   type: "POST",
@@ -1125,11 +1130,11 @@
             //     console.log("Form submitted successfully: " + data);
             //     $("#myForm")[0].reset();
             //     $("#submitButton").prop("disabled", false);
-            // Swal.fire({
-            //   title: "Good job!",
-            //   text: "You clicked the button!",
-            //   icon: "success",
-            // });
+            Swal.fire({
+              title: "Good job!",
+              text: "You clicked the button!",
+              icon: "success",
+            });
             //   },
             //   error: function(jqXHR, textStatus, errorThrown) {
             //     // handle error response
@@ -1154,20 +1159,23 @@
           var isValid = true;
 
           if ($("#name2").val().length < 3) {
-            // $("#username + .error").text("Username must be at least 4 characters long.");
-            console.log("Username must be at least 4 characters long.");
+            $("#name-error2").text("Enter a valid name.");
+            $("#name-error2").addClass('bounce')
             isValid = false;
           }
           if ($("#mobile2").val().length < 10) {
-            $("#mobile-number + .error").text(
+            $("#mobile-error2").text(
               "Mobile number must be at least 10 characters long."
             );
+            $("#mobile-error2").addClass('bounce')
             isValid = false;
           }
           if (isValid) {
             // form is valid, submit it via AJAX
             $("#submit2").prop("disabled", true);
-
+            $("#name-error2").text("");
+            $("#mobile-error2").text("");
+            $('#close').click();
             // $.ajax({
             //   type: "POST",
             //   url: "submit.php",
@@ -1177,11 +1185,11 @@
             //     console.log("Form submitted successfully: " + data);
             //     $("#myForm")[0].reset();
             //     $("#submitButton").prop("disabled", false);
-            // Swal.fire({
-            //   title: "Good job!",
-            //   text: "You clicked the button!",
-            //   icon: "success",
-            // });
+            Swal.fire({
+              title: "Good job!",
+              text: "You clicked the button!",
+              icon: "success",
+            });
             //   },
             //   error: function(jqXHR, textStatus, errorThrown) {
             //     // handle error response
