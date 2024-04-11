@@ -294,7 +294,7 @@
         </p>
         <div class="px-6 flex flex-col lg:flex-row lg:px-16 lg:h-[70vh]">
           <div class="lg:w-1/2 h-2/3 px-4 py-6">
-            <video src="images/omaxe .mp4" autoplay loop controls></video>
+            <video src="images/omaxe .mp4" autoplay loop></video>
           </div>
           <div class="lg:w-1/2 h-2/3 px-4 py-6">
             <div
@@ -1105,6 +1105,10 @@
         </svg>
       </a>
     </div>
+    <div id="side"
+          class="openForm bg-red-500 px-3 py-2 text-white bottom-[50vh] rotate-90 w-fit fixed right-0 origin-top-right  cursor-pointer">
+          PRICE LIST
+        </div>
     <script
       src="https://code.jquery.com/jquery-3.7.1.js"
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
@@ -1173,15 +1177,15 @@
             $("#mobile-error").text("");
             $("#name-error").text("");
 
-            // $.ajax({
-            //   type: "POST",
-            //   url: "submit.php",
-            //   data: $(this).serialize(),
-            //   success: function(data) {
-            //     // handle success response
-            //     console.log("Form submitted successfully: " + data);
-            //     $("#myForm")[0].reset();
-            //     $("#submitButton").prop("disabled", false);
+            $.ajax({
+              type: "POST",
+              url: "submit.php",
+              data: $(this).serialize(),
+              success: function(data) {
+                // handle success response
+                console.log("Form submitted successfully: " + data);
+                $("#myForm")[0].reset();
+                $("#submitButton").prop("disabled", false);
             Swal.fire({
               title: "Thank You! "+$("#name").val(),
               text: "Your inquiry has been received, and we will respond shortly",
@@ -1189,18 +1193,18 @@
             });
             $("#mobile").val('')
             $("#name").val('')
-            //   },
-            //   error: function(jqXHR, textStatus, errorThrown) {
-            //     // handle error response
-            //     console.error("Form submission failed: " + textStatus + ", " + errorThrown);
-            //     $("#submitButton").prop("disabled", false);
-            // Swal.fire({
-            //   icon: "error",
-            //   title: "Oops...",
-            //   text: "Something went wrong!",
-            // });
-            //   }
-            // });
+              },
+              error: function(jqXHR, textStatus, errorThrown) {
+                // handle error response
+                console.error("Form submission failed: " + textStatus + ", " + errorThrown);
+                $("#submitButton").prop("disabled", false);
+            Swal.fire({
+              icon: "error",
+              title: "Oops...",
+              text: "Something went wrong!",
+            });
+              }
+            });
           }
         });
         $("#myForm2").submit(function (event) {
