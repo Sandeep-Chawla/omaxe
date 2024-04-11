@@ -35,44 +35,44 @@
         clip-path: polygon(24% 0, 100% 0%, 100% 100%, 0 100%);
       }
       .bounce {
-  animation-name: bounce;
-  animation-duration: 0.5s;
-  animation-delay: 0.25s;
-}
-@keyframes bounce {
-  0% {
-    transform: translateX(0px);
-    timing-function: ease-in;
-  }
-  37% {
-    transform: translateX(5px);
-    timing-function: ease-out;
-  }
-  55% {
-    transform: translateX(-5px);
-    timing-function: ease-in;
-  }
-  73% {
-    transform: translateX(4px);
-    timing-function: ease-out;
-  }
-  82% {
-    transform: translateX(-4px);
-    timing-function: ease-in;
-  }
-  91% {
-    transform: translateX(2px);
-    timing-function: ease-out;
-  }
-  96% {
-    transform: translateX(-2px);
-    timing-function: ease-in;
-  }
-  100% {
-    transform: translateX(0px);
-    timing-function: ease-in;
-  }
-}
+        animation-name: bounce;
+        animation-duration: 0.5s;
+        animation-delay: 0.25s;
+      }
+      @keyframes bounce {
+        0% {
+          transform: translateX(0px);
+          timing-function: ease-in;
+        }
+        37% {
+          transform: translateX(5px);
+          timing-function: ease-out;
+        }
+        55% {
+          transform: translateX(-5px);
+          timing-function: ease-in;
+        }
+        73% {
+          transform: translateX(4px);
+          timing-function: ease-out;
+        }
+        82% {
+          transform: translateX(-4px);
+          timing-function: ease-in;
+        }
+        91% {
+          transform: translateX(2px);
+          timing-function: ease-out;
+        }
+        96% {
+          transform: translateX(-2px);
+          timing-function: ease-in;
+        }
+        100% {
+          transform: translateX(0px);
+          timing-function: ease-in;
+        }
+      }
     </style>
   </head>
   <body class="montserrat scroll-smooth">
@@ -80,9 +80,7 @@
       id="form-pop"
       class="fixed w-full h-screen hidden top-0 items-center justify-center z-50"
     >
-      <div
-        class="flex flex-col bg-white p-6 md:w-1/2 mt-8 md:mt-0 shadow-2xl"
-      >
+      <div class="flex flex-col bg-white p-6 md:w-1/2 mt-8 md:mt-0 shadow-2xl">
         <span
           id="close"
           class="material-symbols-outlined text-black self-end rounded-full p-2"
@@ -92,7 +90,10 @@
         <h2 class="text-[#FC030E] font-bold leading-5 text-lg mb-1 title-font">
           Invest only INR 70 lakh & get upto 2 lakh p.m.
         </h2>
-        <p class="text-[#0b0f4c] font-medium">Please fill-up the form, our team will get in touch with you to address your query!</p>
+        <p class="text-[#0b0f4c] font-medium">
+          Please fill-up the form, our team will get in touch with you to
+          address your query!
+        </p>
         <form id="myForm2" action="">
           <div class="relative mb-4">
             <input
@@ -100,7 +101,7 @@
               id="name2"
               name="name"
               placeholder="Name"
-              class="w-full bg-[#d4b159bf] rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out placeholder:text-black"
+              class="w-full bg-[#d4b159bf] rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out placeholder:text-black"
             />
             <div id="name-error2" class="text-red-600"></div>
           </div>
@@ -110,9 +111,9 @@
               id="mobile2"
               name="mobile"
               placeholder="Mobile"
-              class="w-full bg-[#d4b159bf] rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out placeholder:text-black"
+              class="w-full bg-[#d4b159bf] rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out placeholder:text-black"
             />
-            <div id="mobile-error2" class="text-red-600 "></div>
+            <div id="mobile-error2" class="text-red-600"></div>
           </div>
 
           <div class="relative mb-4">
@@ -197,10 +198,15 @@
           class="md:w-2/5 hidden md:block justify-between px-10 py-5 rounded bg-white h-fit"
         >
           <div class="flex flex-col md:ml-auto w-full mt-8 md:mt-0">
-            <h2 class="text-[#FC030E] font-bold leading-5 text-lg mb-1 title-font">
+            <h2
+              class="text-[#FC030E] font-bold leading-5 text-lg mb-1 title-font"
+            >
               Invest only INR 70 lakh & get upto 2 lakh p.m.
             </h2>
-            <p class="text-[#0b0f4c] font-medium">Please fill-up the form, our team will get in touch with you to address your query!</p>
+            <p class="text-[#0b0f4c] font-medium">
+              Please fill-up the form, our team will get in touch with you to
+              address your query!
+            </p>
             <form id="myForm">
               <div class="relative mb-4">
                 <input
@@ -208,7 +214,7 @@
                   id="name"
                   name="name"
                   placeholder="Name"
-                  class="w-full text-black bg-[#d4b159bf] rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out placeholder:text-black"
+                  class="w-full text-black bg-[#d4b159bf] rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out placeholder:text-black"
                 />
                 <div id="name-error" class="text-red-600"></div>
               </div>
@@ -218,7 +224,7 @@
                   id="mobile"
                   name="mobile"
                   placeholder="Mobile"
-                  class="w-full text-black bg-[#d4b159bf] rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out placeholder:text-black"
+                  class="w-full text-black bg-[#d4b159bf] rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out placeholder:text-black"
                 />
                 <div id="mobile-error" class="text-red-600"></div>
               </div>
@@ -228,7 +234,7 @@
                   id="message"
                   name="message"
                   placeholder="Query"
-                  class="w-full text-black bg-[#d4b159bf] rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-20 text-base outline-none placeholder:text-black  py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                  class="w-full text-black bg-[#d4b159bf] rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-20 text-base outline-none placeholder:text-black py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                 ></textarea>
               </div>
               <input
@@ -558,7 +564,9 @@
                 </div>
               </div>
               <div class="px-2 w-1/2">
-                <div class="openForm flex flex-wrap w-full bg-gray-100 relative">
+                <div
+                  class="openForm flex flex-wrap w-full bg-gray-100 relative"
+                >
                   <img
                     alt="gallery"
                     class="w-full object-cover h-full object-center block inset-0"
@@ -1044,20 +1052,56 @@
       class="sticky flex justify-evenly drop-shadow-2xl shadow-2xl mx-auto w-56 bottom-4 right-4 rounded-full bg-white"
     >
       <a class="py-3 flex justify-center items-center" href="tel:9971686761"
-        ><svg class="fill-green-500" data-bbox="17.052 7.009 15.938 16.944" width="50" height="30" viewBox="17.052 7.009 15.938 16.944" xmlns="http://www.w3.org/2000/svg">
+        ><svg
+          class="fill-green-500"
+          data-bbox="17.052 7.009 15.938 16.944"
+          width="50"
+          height="30"
+          viewBox="17.052 7.009 15.938 16.944"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g>
-              <path d="M21.886 7.46c-.265-.483-.827-.599-1.271-.247l-1.74 1.38c-2.164 1.718-2.44 4.79-.618 6.86l5.96 6.772c1.822 2.07 5.011 2.316 7.13.542l1.313-1.1c.428-.357.444-.946.028-1.322l-2.904-2.63c-.412-.373-1.105-.404-1.54-.076l-1.714 1.296-4.843-5.353 1.743-1.259c.446-.321.595-.97.327-1.457l-1.87-3.406z" fill-rule="evenodd"></path>
-          </g>
-      </svg></a>
-      <a class="py-3 px-2 flex border-x border-gray-200 justify-center" href="https://wa.me/9971686761"
-        ><svg class="fill-green-500" data-bbox="15 5 19.904 20" xmlns="http://www.w3.org/2000/svg" viewBox="15 5 19.904 20" height="30" width="50" data-type="shape">
+            <path
+              d="M21.886 7.46c-.265-.483-.827-.599-1.271-.247l-1.74 1.38c-2.164 1.718-2.44 4.79-.618 6.86l5.96 6.772c1.822 2.07 5.011 2.316 7.13.542l1.313-1.1c.428-.357.444-.946.028-1.322l-2.904-2.63c-.412-.373-1.105-.404-1.54-.076l-1.714 1.296-4.843-5.353 1.743-1.259c.446-.321.595-.97.327-1.457l-1.87-3.406z"
+              fill-rule="evenodd"
+            ></path>
+          </g></svg></a>
+      <a
+        class="py-3 px-2 flex border-x border-gray-200 justify-center"
+        href="https://wa.me/9971686761"
+        ><svg
+          class="fill-green-500"
+          data-bbox="15 5 19.904 20"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="15 5 19.904 20"
+          height="30"
+          width="50"
+          data-type="shape"
+        >
           <g>
-              <path d="M29.512 16.985c-.248-.124-1.465-.723-1.692-.806-.227-.082-.392-.123-.557.124-.165.248-.64.806-.784.971-.145.166-.29.186-.537.062-.247-.124-1.045-.385-1.991-1.229-.736-.656-1.233-1.467-1.378-1.715-.144-.248-.015-.382.109-.506.111-.11.248-.289.371-.433.124-.145.165-.248.248-.414.082-.165.041-.31-.02-.433-.063-.124-.558-1.343-.764-1.84-.201-.482-.405-.416-.557-.424a9.932 9.932 0 0 0-.475-.009.91.91 0 0 0-.66.31c-.227.248-.867.847-.867 2.066 0 1.219.887 2.396 1.011 2.561.124.166 1.746 2.667 4.23 3.74.591.255 1.053.407 1.412.521.593.189 1.133.162 1.56.098.476-.07 1.465-.599 1.671-1.177.207-.579.207-1.074.145-1.178-.062-.103-.227-.165-.475-.289m-4.518 6.17h-.004a8.225 8.225 0 0 1-4.192-1.149l-.3-.178-3.118.817.832-3.04-.196-.31a8.218 8.218 0 0 1-1.26-4.385c.002-4.541 3.697-8.236 8.241-8.236 2.2 0 4.268.859 5.824 2.416a8.188 8.188 0 0 1 2.41 5.827c-.002 4.542-3.697 8.237-8.237 8.237m7.01-15.248A9.846 9.846 0 0 0 24.994 5c-5.463 0-9.909 4.446-9.91 9.91a9.879 9.879 0 0 0 1.322 4.954L15 25l5.254-1.378a9.902 9.902 0 0 0 4.736 1.206h.004c5.462 0 9.908-4.446 9.91-9.91a9.851 9.851 0 0 0-2.9-7.012" fill-rule="evenodd"></path>
+            <path
+              d="M29.512 16.985c-.248-.124-1.465-.723-1.692-.806-.227-.082-.392-.123-.557.124-.165.248-.64.806-.784.971-.145.166-.29.186-.537.062-.247-.124-1.045-.385-1.991-1.229-.736-.656-1.233-1.467-1.378-1.715-.144-.248-.015-.382.109-.506.111-.11.248-.289.371-.433.124-.145.165-.248.248-.414.082-.165.041-.31-.02-.433-.063-.124-.558-1.343-.764-1.84-.201-.482-.405-.416-.557-.424a9.932 9.932 0 0 0-.475-.009.91.91 0 0 0-.66.31c-.227.248-.867.847-.867 2.066 0 1.219.887 2.396 1.011 2.561.124.166 1.746 2.667 4.23 3.74.591.255 1.053.407 1.412.521.593.189 1.133.162 1.56.098.476-.07 1.465-.599 1.671-1.177.207-.579.207-1.074.145-1.178-.062-.103-.227-.165-.475-.289m-4.518 6.17h-.004a8.225 8.225 0 0 1-4.192-1.149l-.3-.178-3.118.817.832-3.04-.196-.31a8.218 8.218 0 0 1-1.26-4.385c.002-4.541 3.697-8.236 8.241-8.236 2.2 0 4.268.859 5.824 2.416a8.188 8.188 0 0 1 2.41 5.827c-.002 4.542-3.697 8.237-8.237 8.237m7.01-15.248A9.846 9.846 0 0 0 24.994 5c-5.463 0-9.909 4.446-9.91 9.91a9.879 9.879 0 0 0 1.322 4.954L15 25l5.254-1.378a9.902 9.902 0 0 0 4.736 1.206h.004c5.462 0 9.908-4.446 9.91-9.91a9.851 9.851 0 0 0-2.9-7.012"
+              fill-rule="evenodd"
+            ></path>
+          </g></svg>
+    </a>
+      <a
+        class="py-3 flex justify-center"
+        href="sms:9971686761?body=interested in omaxe gaziabad"
+      >
+        <svg
+          class="fill-blue-500"
+          viewBox="17 8 17 17.989"
+          width="50"
+          height="30"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g>
+            <path
+              d="M19 8c-1.105 0-2 .892-2 2.005v9.577a2 2 0 0 0 1.99 2.004h2.238l-.18 3.847c-.027.555.3.724.736.371L27 21.586h4.994A2.001 2.001 0 0 0 34 19.582v-9.577C34 8.897 33.11 8 32 8H19z"
+              fill-rule="evenodd"
+            ></path>
           </g>
-      </svg></a>
-      <a class="py-3 flex justify-center" href="sms:9971686761?body=interested in omaxe gaziabad">
-        <svg class="fill-blue-500" viewBox="17 8 17 17.989" width="50" height="30" xmlns="http://www.w3.org/2000/svg">
-          <g><path d="M19 8c-1.105 0-2 .892-2 2.005v9.577a2 2 0 0 0 1.99 2.004h2.238l-.18 3.847c-.027.555.3.724.736.371L27 21.586h4.994A2.001 2.001 0 0 0 34 19.582v-9.577C34 8.897 33.11 8 32 8H19z" fill-rule="evenodd"></path></g>
         </svg>
       </a>
     </div>
@@ -1094,25 +1138,33 @@
           $("#form-pop").addClass("hidden");
         });
         $("#myForm").submit(function (event) {
-          console.log("click");
           event.preventDefault();
-
-          $(".error").text("");
-
+          $("#name-error").text("");
+          $("#mobile-error").text("");
+          $("#mobile-error").removeClass("bounce");
+          $("#name-error").removeClass("bounce");
           var isValid = true;
-
+          var inputVal = $("#mobile").val();
           if ($("#name").val().length < 3) {
-            $("#name-error").text(
-              "Please Enter a Valid Name"
-            );
-            $("#name-error").addClass('bounce')
+            $("#name-error").text("Please Enter a Valid Name");
+            $("#name-error").addClass("bounce");
             isValid = false;
           }
           if ($("#mobile").val().length < 10) {
             $("#mobile-error").text(
               "Mobile number must be at least 10 characters long."
+            );}
+          if ($("#mobile").val().length > 13) {
+            $("#mobile-error").text(
+              "Mobile number must be at least 10 characters long."
             );
-            $("#mobile-error").addClass('bounce')
+            $("#mobile-error").addClass("bounce");
+            isValid = false;
+          }
+          var isNumeric = isNaN(inputVal);
+          if (isNumeric) {
+            $("#mobile-error").text("Enter a valid number");
+            $("#mobile-error").addClass("bounce");
             isValid = false;
           }
           if (isValid) {
@@ -1131,10 +1183,12 @@
             //     $("#myForm")[0].reset();
             //     $("#submitButton").prop("disabled", false);
             Swal.fire({
-              title: "Good job!",
-              text: "You clicked the button!",
+              title: "Thank You! "+$("#name").val(),
+              text: "Your inquiry has been received, and we will respond shortly",
               icon: "success",
             });
+            $("#mobile").val('')
+            $("#name").val('')
             //   },
             //   error: function(jqXHR, textStatus, errorThrown) {
             //     // handle error response
@@ -1144,30 +1198,42 @@
             //   icon: "error",
             //   title: "Oops...",
             //   text: "Something went wrong!",
-            //   footer: '<a href="#">Why do I have this issue?</a>',
             // });
             //   }
             // });
           }
         });
         $("#myForm2").submit(function (event) {
-          console.log("click");
           event.preventDefault();
-
-          $(".error").text("");
-
+          $("#name-error2").text("");
+          $("#mobile-error2").text("");
+          $("#mobile-error2").removeClass("bounce");
+          $("#name-error2").removeClass("bounce");
           var isValid = true;
-
+          var inputVal = $("#mobile2").val();
           if ($("#name2").val().length < 3) {
             $("#name-error2").text("Enter a valid name.");
-            $("#name-error2").addClass('bounce')
+            $("#name-error2").addClass("bounce");
             isValid = false;
           }
           if ($("#mobile2").val().length < 10) {
-            $("#mobile-error2").text(
-              "Mobile number must be at least 10 characters long."
-            );
-            $("#mobile-error2").addClass('bounce')
+              $("#mobile-error2").text(
+                "Mobile number must be at least 10 characters long."
+              );
+              $("#mobile-error2").addClass("bounce");
+              isValid = false;
+          }
+          if ($("#mobile2").val().length > 13) {
+              $("#mobile-error2").text(
+                "Mobile number must be at least 10 characters long."
+              );
+              $("#mobile-error2").addClass("bounce");
+              isValid = false;
+            }
+          var isNumeric = isNaN(inputVal);
+          if (isNumeric) {
+            $("#mobile-error2").text("Enter a valid number");
+            $("#mobile-error2").addClass("bounce");
             isValid = false;
           }
           if (isValid) {
@@ -1175,7 +1241,7 @@
             $("#submit2").prop("disabled", true);
             $("#name-error2").text("");
             $("#mobile-error2").text("");
-            $('#close').click();
+            $("#close").click();
             // $.ajax({
             //   type: "POST",
             //   url: "submit.php",
@@ -1186,10 +1252,12 @@
             //     $("#myForm")[0].reset();
             //     $("#submitButton").prop("disabled", false);
             Swal.fire({
-              title: "Good job!",
-              text: "You clicked the button!",
+              title: "Thank You! "+$("#name").val(),
+              text: "Your inquiry has been received, and we will respond shortly",
               icon: "success",
             });
+            $("#mobile2").val('')
+            $("#name2").val('')
             //   },
             //   error: function(jqXHR, textStatus, errorThrown) {
             //     // handle error response
@@ -1199,7 +1267,6 @@
             //   icon: "error",
             //   title: "Oops...",
             //   text: "Something went wrong!",
-            //   footer: '<a href="#">Why do I have this issue?</a>',
             // });
             //   }
             // });
