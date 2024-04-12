@@ -1,35 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
   <head>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/b43c7b4525.js"
-      crossorigin="anonymous"
-    ></script>
     <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Omaxe Gaziabad</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+    <link rel="preconnect" href="https://fonts.googleapis.com" defer=''/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin defer='' />
+    <link defer=''
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link
+    <link defer=''
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
-    <link rel="stylesheet" href="output.css" />
+    <link defer rel="stylesheet" href="output.css" />
     <style>
       .montserrat {
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
+        font-display: swap;
       }
       #clip {
         clip-path: polygon(24% 0, 100% 0%, 100% 100%, 0 100%);
@@ -83,7 +76,7 @@
       <div class="flex flex-col bg-white p-6 md:w-1/2 mt-8 md:mt-0 shadow-2xl">
         <span
           id="close"
-          class="material-symbols-outlined text-black self-end rounded-full p-2"
+          class="material-symbols-outlined cursor-pointer text-black self-end rounded-full p-2"
         >
           close
         </span>
@@ -139,11 +132,11 @@
       class="lg:px-32 flex w-full fixed z-20 top-0 text-white transition-all h-16 items-center justify-around"
     >
       <div class="logo">
-        <img src="images/logo.png" alt="logo" class="w-44" />
+        <a href="/">
+          <img loading="lazy" src="images/logo.webp" alt="logo" width='10' height="10" class="w-44" />
+        </a>
       </div>
-      <ul
-        class="flex-col sm:flex-row hidden sm:flex items-center justify-evenly"
-      >
+      <ul class="flex-col sm:flex-row hidden sm:flex items-center justify-evenly">
         <li class="mx-3"><a href="#home">Home</a></li>
         <li class="mx-3"><a href="#main">Overview</a></li>
         <li class="mx-3"><a href="#location">Location</a></li>
@@ -157,7 +150,7 @@
         class="absolute z-1 bg-gradient-to-b from-[#000000cc] to-[#00000080] w-full h-full"
       ></div>
       <div
-        class="flex flex-col sm:flex-row absolute px-2 md:px-8 lg:px-16 top-[10%] md:justify-between justify-center md:top-[20%] w-full text-white"
+        class="flex flex-col md:flex-row absolute px-2 md:px-8 lg:px-16 top-[10%] md:justify-between justify-center md:top-[20%] w-full text-white"
       >
         <div class="my-10 md:w-1/2 flex md:items-start items-center flex-col">
           <h1 class="text-3xl md:text-left text-center md:text-5xl">
@@ -177,7 +170,7 @@
             class="flex flex-row justify-evenly w-full lg:w-2/3 py-10 items-center md:items-end"
           >
             <div class="flex items-center flex-col">
-              <div>Returns<br/>12% p.a</div>
+              <div>Returns<br />12% p.a</div>
               <span class="material-symbols-outlined text-7xl"
                 >currency_rupee</span
               >
@@ -195,7 +188,7 @@
           </div>
         </div>
         <div
-          class="md:w-2/5  md:block justify-between px-10 py-5 rounded bg-white h-fit"
+          class="md:w-2/5 md:block justify-between px-10 py-5 rounded bg-white h-fit"
         >
           <div class="flex flex-col md:ml-auto w-full mt-8 md:mt-0">
             <h2
@@ -264,7 +257,7 @@
             >
               Omaxe Old Bus Stand Ghaziabad
             </h1>
-            <p class="mb-8 leading-relaxed">
+            <p class="mb-8 font-normal">
               Ghaziabad's historic Old Bus Stand is set for a remarkable
               transformation, taking inspiration from the highly successful
               Omaxe Chandni Chowk project. Omaxe Group, a leading Indian real
@@ -277,9 +270,12 @@
           </div>
           <div class="lg:max-w-lg lg:w-full md:w-1/2 md:h-[50vh]">
             <img
+            width="10"
+            height="10"
+            loading="lazy"
               class="object-cover object-center rounded h-full w-full"
               alt="hero"
-              src="images/overview.jpg"
+              src="images/background.webp"
             />
           </div>
         </div>
@@ -294,7 +290,7 @@
         </p>
         <div class="px-6 flex flex-col lg:flex-row lg:px-16 lg:h-[70vh]">
           <div class="lg:w-1/2 h-2/3 px-4 py-6">
-            <video src="images/omaxe .mp4" autoplay loop></video>
+            <video src="images/OmaxeDrone.mp4" muted autoplay loop></video>
           </div>
           <div class="lg:w-1/2 h-2/3 px-4 py-6">
             <div
@@ -365,7 +361,7 @@
                 Chowk. The project will be divided into two distinct sections:
               </p>
               <div class="pl-3">
-                <li>
+               <ul class="list-disc"><li>
                   A contemporary commercial complex: This section will house
                   retail stores, offices, restaurants, and a multiplex, creating
                   a vibrant hub for businesses and entertainment, mirroring the
@@ -376,7 +372,7 @@
                   A futuristic bus stand: The revamped bus stand will integrate
                   smart technologies and modern infrastructure to offer a
                   seamless travel experience.
-                </li>
+                </li></ul>
               </div>
               <p></p>
             </div>
@@ -495,6 +491,9 @@
             <div class="sm:w-1/2 mb-10 px-4">
               <div class="rounded-lg h-64 overflow-hidden">
                 <img
+                width="10"
+                height="10"
+                loading="lazy"
                   alt="content"
                   class="object-cover object-center h-full w-full"
                   src="images/retail-shop.webp"
@@ -518,6 +517,9 @@
             <div class="sm:w-1/2 mb-10 px-4">
               <div class="rounded-lg h-64 overflow-hidden">
                 <img
+                width="10"
+                height="10"
+                loading="lazy"
                   alt="content"
                   class="object-cover object-center h-full w-full"
                   src="images/food-court.webp"
@@ -548,18 +550,24 @@
           <div class="lg:w-2/3 mx-auto">
             <div class="flex flex-wrap w-full bg-gray-100 relative mb-4">
               <img
+              width="10"
+              height="10"
+              loading="lazy"
                 alt="gallery"
                 class="openForm w-full object-cover h-full object-center block inset-0"
-                src="images/floorplan1.png"
+                src="images/floorplan1.webp"
               />
             </div>
             <div class="flex flex-wrap -mx-2">
               <div class="px-2 w-1/2">
                 <div class="flex flex-wrap w-full bg-gray-100 relative">
                   <img
+                  width="10"
+                  height="10"
+                  loading="lazy"
                     alt="gallery"
                     class="openForm w-full object-cover h-full object-center block inset-0"
-                    src="images/floorplan2.png"
+                    src="images/floorplan2.webp"
                   />
                 </div>
               </div>
@@ -568,9 +576,12 @@
                   class="openForm flex flex-wrap w-full bg-gray-100 relative"
                 >
                   <img
+                  width="10"
+                  height="10"
+                  loading="lazy"
                     alt="gallery"
                     class="w-full object-cover h-full object-center block inset-0"
-                    src="images/floorplan3.png"
+                    src="images/floorplan3.webp"
                   />
                 </div>
               </div>
@@ -986,6 +997,7 @@
         <div class="container m-auto px-6 text-gray-600 lg:px-12 xl:px-6">
           <div class="space-y-6 py-10 md:space-y-0 md:flex md:gap-6 lg:gap-12">
             <iframe
+            title="google location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.6480880517565!2d77.43093778616444!3d28.67025392648899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf13c09cbc213%3A0xaf243ec835b4cf31!2sOmaxe%20Old%20Bus%20Stand!5e0!3m2!1sen!2sin!4v1712741924707!5m2!1sen!2sin"
               class="md:w-1/2 w-full h-64"
               style="border: 0"
@@ -1030,10 +1042,10 @@
     <footer class="text-gray-600 body-font bg-[#222222]">
       <div class="container px-5 py-8 mx-auto flex items-center flex-col">
         <span>
-          <a
+          <a href="/" aria-label="logo"
             class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
           >
-            <img src="images/logo.png" alt="" class="w-32" />
+            <img loading="lazy" src="images/logo.webp" alt="" width="10" height="10" class="w-32" />
           </a>
           <p class="text-sm text-gray-500 text-center sm:py-2 sm:mt-0 mt-4">
             © 2024 Omaxe
@@ -1051,7 +1063,7 @@
       id="contact-icon"
       class="sticky flex justify-evenly drop-shadow-2xl shadow-2xl mx-auto w-56 bottom-4 right-4 rounded-full bg-white"
     >
-      <a class="py-3 flex justify-center items-center" href="tel:9650912227"
+      <a aria-label="phone link" class="py-3 flex justify-center items-center" href="tel:9650912227"
         ><svg
           class="fill-green-500"
           data-bbox="17.052 7.009 15.938 16.944"
@@ -1065,8 +1077,10 @@
               d="M21.886 7.46c-.265-.483-.827-.599-1.271-.247l-1.74 1.38c-2.164 1.718-2.44 4.79-.618 6.86l5.96 6.772c1.822 2.07 5.011 2.316 7.13.542l1.313-1.1c.428-.357.444-.946.028-1.322l-2.904-2.63c-.412-.373-1.105-.404-1.54-.076l-1.714 1.296-4.843-5.353 1.743-1.259c.446-.321.595-.97.327-1.457l-1.87-3.406z"
               fill-rule="evenodd"
             ></path>
-          </g></svg></a>
-      <a
+          </g>
+        </svg>
+      </a>
+      <a aria-label="whatsapp link"
         class="py-3 px-2 flex border-x border-gray-200 justify-center"
         href="https://wa.me/+919650912227"
         ><svg
@@ -1083,9 +1097,10 @@
               d="M29.512 16.985c-.248-.124-1.465-.723-1.692-.806-.227-.082-.392-.123-.557.124-.165.248-.64.806-.784.971-.145.166-.29.186-.537.062-.247-.124-1.045-.385-1.991-1.229-.736-.656-1.233-1.467-1.378-1.715-.144-.248-.015-.382.109-.506.111-.11.248-.289.371-.433.124-.145.165-.248.248-.414.082-.165.041-.31-.02-.433-.063-.124-.558-1.343-.764-1.84-.201-.482-.405-.416-.557-.424a9.932 9.932 0 0 0-.475-.009.91.91 0 0 0-.66.31c-.227.248-.867.847-.867 2.066 0 1.219.887 2.396 1.011 2.561.124.166 1.746 2.667 4.23 3.74.591.255 1.053.407 1.412.521.593.189 1.133.162 1.56.098.476-.07 1.465-.599 1.671-1.177.207-.579.207-1.074.145-1.178-.062-.103-.227-.165-.475-.289m-4.518 6.17h-.004a8.225 8.225 0 0 1-4.192-1.149l-.3-.178-3.118.817.832-3.04-.196-.31a8.218 8.218 0 0 1-1.26-4.385c.002-4.541 3.697-8.236 8.241-8.236 2.2 0 4.268.859 5.824 2.416a8.188 8.188 0 0 1 2.41 5.827c-.002 4.542-3.697 8.237-8.237 8.237m7.01-15.248A9.846 9.846 0 0 0 24.994 5c-5.463 0-9.909 4.446-9.91 9.91a9.879 9.879 0 0 0 1.322 4.954L15 25l5.254-1.378a9.902 9.902 0 0 0 4.736 1.206h.004c5.462 0 9.908-4.446 9.91-9.91a9.851 9.851 0 0 0-2.9-7.012"
               fill-rule="evenodd"
             ></path>
-          </g></svg>
-    </a>
-      <a
+          </g>
+        </svg>
+      </a>
+      <a aria-label="sms link"
         class="py-3 flex justify-center"
         href="sms:9650912227?body=interested in omaxe gaziabad"
       >
@@ -1105,16 +1120,22 @@
         </svg>
       </a>
     </div>
-    <div id="side"
-          class="openForm bg-red-500 px-3 py-2 text-white bottom-[50vh] rotate-90 w-fit fixed right-0 origin-top-right  cursor-pointer">
-          PRICE LIST
-        </div>
+    <div
+      id="side"
+      class="openForm bg-red-500 px-3 py-2 text-white bottom-[50vh] rotate-90 w-fit fixed right-0 origin-top-right cursor-pointer"
+    >
+      PRICE LIST
+    </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script
-      src="https://code.jquery.com/jquery-3.7.1.js"
-      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
-    <script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script> -->
+    <script src="gsap.min.js" defer></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script >
       $(document).ready(function () {
         $(window).scroll(function () {
           if ($(this).scrollTop() > 100) {
@@ -1136,6 +1157,12 @@
         $(".openForm").click(() => {
           $("#form-pop").removeClass("hidden");
           $("#form-pop").addClass("flex");
+          gsap.from("#form-pop", {
+            y: -100,
+            opacity: 0,
+            duration: 1,
+            ease: "back.out(1.7)",
+          });
         });
         $("#close").click(() => {
           $("#form-pop").removeClass("flex");
@@ -1157,7 +1184,8 @@
           if ($("#mobile").val().length < 10) {
             $("#mobile-error").text(
               "Mobile number must be at least 10 characters long."
-            );}
+            );
+          }
           if ($("#mobile").val().length > 13) {
             $("#mobile-error").text(
               "Mobile number must be at least 10 characters long."
@@ -1176,34 +1204,42 @@
             $("#submit").prop("disabled", true);
             $("#mobile-error").text("");
             $("#name-error").text("");
-
+            Swal.fire({
+                  title: "Thank You! " + $("#name").val(),
+                  text: "Your inquiry has been received, and we will respond shortly",
+                  icon: "success",
+                });
             $.ajax({
               type: "POST",
-              url: "submit.php",
+              url: "process_form.php",
               data: $(this).serialize(),
-              success: function(data) {
+              success: function (data) {
                 // handle success response
                 console.log("Form submitted successfully: " + data);
                 $("#myForm")[0].reset();
-                $("#submitButton").prop("disabled", false);
-            Swal.fire({
-              title: "Thank You! "+$("#name").val(),
-              text: "Your inquiry has been received, and we will respond shortly",
-              icon: "success",
-            });
-            $("#mobile").val('')
-            $("#name").val('')
-              },
-              error: function(jqXHR, textStatus, errorThrown) {
-                // handle error response
-                console.error("Form submission failed: " + textStatus + ", " + errorThrown);
-                $("#submitButton").prop("disabled", false);
-            Swal.fire({
+                if(data =='success'){
+                }
+                else{
+                  Swal.fire({
               icon: "error",
               title: "Oops...",
               text: "Something went wrong!",
             });
-              }
+                }
+                $("#mobile").val("");
+                $("#name").val("");
+              },
+              error: function (jqXHR, textStatus, errorThrown) {
+                // handle error response
+                console.error(
+                  "Form submission failed: " + textStatus + ", " + errorThrown
+                );
+                Swal.fire({
+              icon: "error",
+              title: "Oops...",
+              text: "Something went wrong!",
+            });
+              },
             });
           }
         });
@@ -1221,19 +1257,19 @@
             isValid = false;
           }
           if ($("#mobile2").val().length < 10) {
-              $("#mobile-error2").text(
-                "Mobile number must be at least 10 characters long."
-              );
-              $("#mobile-error2").addClass("bounce");
-              isValid = false;
+            $("#mobile-error2").text(
+              "Mobile number must be at least 10 characters long."
+            );
+            $("#mobile-error2").addClass("bounce");
+            isValid = false;
           }
           if ($("#mobile2").val().length > 13) {
-              $("#mobile-error2").text(
-                "Mobile number must be at least 10 characters long."
-              );
-              $("#mobile-error2").addClass("bounce");
-              isValid = false;
-            }
+            $("#mobile-error2").text(
+              "Mobile number must be at least 10 characters long."
+            );
+            $("#mobile-error2").addClass("bounce");
+            isValid = false;
+          }
           var isNumeric = isNaN(inputVal);
           if (isNumeric) {
             $("#mobile-error2").text("Enter a valid number");
@@ -1246,34 +1282,41 @@
             $("#name-error2").text("");
             $("#mobile-error2").text("");
             $("#close").click();
-            // $.ajax({
-            //   type: "POST",
-            //   url: "submit.php",
-            //   data: $(this).serialize(),
-            //   success: function(data) {
-            //     // handle success response
-            //     console.log("Form submitted successfully: " + data);
-            //     $("#myForm")[0].reset();
-            //     $("#submitButton").prop("disabled", false);
             Swal.fire({
-              title: "Thank You! "+$("#name").val(),
-              text: "Your inquiry has been received, and we will respond shortly",
-              icon: "success",
+                    title: "Thank You! " + $("#name").val(),
+                    text: "Your inquiry has been received, and we will respond shortly",
+                    icon: "success",
+                  });
+            $.ajax({
+              type: "POST",
+              url: "process_form.php",
+              data: $(this).serialize(),
+              success: function(data) {
+                // handle success response
+                console.log("Form submitted successfully: " + data);
+                $("#myForm")[0].reset();
+                if(data =='success'){
+                }
+                else{
+                  Swal.fire({
+              icon: "error",
+              title: "Oops...",
+              text: "Something went wrong!",
             });
-            $("#mobile2").val('')
-            $("#name2").val('')
-            //   },
-            //   error: function(jqXHR, textStatus, errorThrown) {
-            //     // handle error response
-            //     console.error("Form submission failed: " + textStatus + ", " + errorThrown);
-            //     $("#submitButton").prop("disabled", false);
-            // Swal.fire({
-            //   icon: "error",
-            //   title: "Oops...",
-            //   text: "Something went wrong!",
-            // });
-            //   }
-            // });
+                }
+            $("#mobile2").val("");
+            $("#name2").val("");
+              },
+              error: function(jqXHR, textStatus, errorThrown) {
+                // handle error response
+                console.error("Form submission failed: " + textStatus + ", " + errorThrown);
+            Swal.fire({
+              icon: "error",
+              title: "Oops...",
+              text: "Something went wrong!",
+            });
+              }
+            });
           }
         });
       });
